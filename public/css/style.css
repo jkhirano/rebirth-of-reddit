@@ -1,0 +1,40 @@
+body {
+  background: url("/assets/bg.jpg");
+  background-color: white;
+  background-size: cover;
+  margin: 0px; }
+
+#header {
+  background: url("/assets/header_bg.svg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+li {
+  float: left; }
+
+li a {
+  display: block;
+  color: #707071;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111; }
