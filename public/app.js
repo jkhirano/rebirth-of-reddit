@@ -70,17 +70,12 @@ todayILearnedSub.addEventListener("click", function() {
 let subReddit = document.getElementById("main");
 
 const mainReq = new XMLHttpRequest();
-// console.log(mainReq);
 mainReq.addEventListener("load", mainReqListener);
 mainReq.open("GET", "https://www.reddit.com/r/cats.json");
 mainReq.send();
-// mainReq.responseType = "json";
-// ^ Can see into response and other categories, but says there's an error, can't find "children"
 
 function mainReqListener() {
   let subredditResponse = JSON.parse(this.responseText);
-  // ^ Can't see into response and other categories, no error
-  console.log(subredditResponse);
   let subData = subredditResponse.data.children;
 
   for (let i = 0; i < subData.length; i++) {
