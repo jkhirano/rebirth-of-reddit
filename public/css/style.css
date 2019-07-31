@@ -1,7 +1,6 @@
 body {
   background: url("/assets/bg.jpg");
   background-color: white;
-  background-size: cover;
   margin: 0px; }
 
 #header {
@@ -26,6 +25,11 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 21px; }
+
+.navbar {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap; }
 
 #header a:link {
   color: #b74326;
@@ -67,6 +71,65 @@ li a:hover {
   border: 1px solid #707071;
   background-color: #707071;
   border-radius: 50%; }
+
+#main {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap; }
+
+.container {
+  background-size: cover;
+  height: 350px;
+  width: 325px;
+  background-color: white;
+  margin: 20px; }
+
+.image {
+  height: 150px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; }
+
+.titleContainer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1;
+  max-height: 2;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #333; }
+
+.subtitleContainer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1;
+  max-height: 2;
+  margin: 5px 10px 5px 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #707071; }
+
+.textContainer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1;
+  max-height: 4;
+  margin: 10px 10px 5px 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #333; }
 
 .footer {
   position: fixed;

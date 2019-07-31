@@ -18,16 +18,19 @@
     </div>
     <div class="categories">
       <ul class="navbar">
-        <li><a href="default.asp">Random</a></li>
+        <li><a id="random" href="#">Random</a></li>
         <li class="dot"></li>
-        <li><a href="default.asp">Cats</a>
-            <li class="dot"></li>
-    </li>
-        <li><a href="default.asp">DesignPorn</a></li>
+        <li>
+          <a id="cats" href="#">Cats</a>
+          <li class="dot"></li>
+        </li>
+        <li><a id="designPorn" href="#">DesignPorn</a></li>
         <li class="dot"></li>
-        <li><a href="default.asp">Today I Learned</a></li>
+        <li><a id="todayILearned" href="#">Today I Learned</a></li>
       </ul>
     </div>
+
+    <div id="main"></div>
 
     <div class="footer">
       <ul class="navbar">
@@ -43,6 +46,7 @@
         </li>
       </ul>
     </div>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>
